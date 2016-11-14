@@ -9,4 +9,10 @@ class User < ApplicationRecord
             uniqueness: true,
             format: /\A([\w+\-].?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
 
+  after_create :welcome_email
+
+  def welcome_email
+    RegistrationMailer.new_user(self).deliver
+  end
+
 end
