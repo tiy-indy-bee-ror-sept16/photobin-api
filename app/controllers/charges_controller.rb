@@ -3,6 +3,7 @@ class ChargesController < ApplicationController
   def create
     @photo = Photo.find(params[:id])
     @amount = 500
+
     customer = Stripe::Customer.create(
       :email => params[:stripeEmail],
       :source  => params[:stripeToken]
