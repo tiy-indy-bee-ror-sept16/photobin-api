@@ -26,6 +26,9 @@ gem "refile-mini_magick"
 gem 'refile-postgres', '~> 1.4'
 gem 'stripe'
 gem 'foreman'
+gem 'rollbar'
+gem 'oj', '~> 2.12.14'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

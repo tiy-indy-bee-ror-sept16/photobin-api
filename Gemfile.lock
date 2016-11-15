@@ -97,11 +97,13 @@ GEM
     mini_magick (4.5.1)
     mini_portile2 (2.1.0)
     minitest (5.9.1)
+    multi_json (1.12.1)
     mustermann (1.0.0.beta2)
     netrc (0.11.0)
     nio4r (1.2.1)
     nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
+    oj (2.12.14)
     pg (0.19.0)
     puma (3.6.0)
     rack (2.0.1)
@@ -145,6 +147,8 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
+    rollbar (2.13.3)
+      multi_json
     spring (2.0.0)
       activesupport (>= 4.2)
     spring-watcher-listen (2.0.1)
@@ -180,6 +184,7 @@ DEPENDENCIES
   byebug
   foreman
   listen (~> 3.0.5)
+  oj (~> 2.12.14)
   pg (~> 0.18)
   puma (~> 3.0)
   rack-cors
@@ -187,6 +192,7 @@ DEPENDENCIES
   refile!
   refile-mini_magick
   refile-postgres (~> 1.4)
+  rollbar
   sinatra!
   spring
   spring-watcher-listen (~> 2.0.0)
